@@ -1,0 +1,24 @@
+# Emare AI - Requirements
+# Python 3.11+
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# HTTP Client
+httpx==0.26.0
+
+# CORS
+python-multipart==0.0.6
+
+# Logging
+python-json-logger==2.0.7
+
+# Optional: Advanced features
+# torch==2.1.2  # For local model inference
+# transformers==4.36.2  # Hugging Face models
+# sentence-transformers==2.2.2  # Embeddings
+# langchain==0.1.0  # LLM orchestration
+# chromadb==0.4.22  # Vector database
