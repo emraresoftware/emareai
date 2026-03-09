@@ -38,6 +38,12 @@ logger = logging.getLogger(__name__)
 
 # FastAPI app
 app = FastAPI(
+
+# === Emare Feedback ===
+from feedback_router import router as feedback_router
+app.include_router(feedback_router, prefix="/api/feedback", tags=["feedback"])
+# ======================
+
     title=settings.APP_NAME,
     version=settings.APP_VERSION,
     description="Emare AI - Özel yapay zeka motoru. OpenAI-compatible API.",
